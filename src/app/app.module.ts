@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
+import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     CarouselComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    SobreNosotrosComponent,
+    ProyectosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

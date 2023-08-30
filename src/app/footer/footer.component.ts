@@ -3,18 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
-
   direccion: string;
-  celular: string;
-  email:string
+  celular: string = '+54 9 11 6694-3351';
+  email: string = 'gastongabriel.2016@gmail.com';
+  instagramLink: string =
+    'https://instagram.com/estaciondesillones?igshid=MzRlODBiNWFlZA==';
+  facebookLink: string = 'https://www.facebook.com/estaciondesillones';
 
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
