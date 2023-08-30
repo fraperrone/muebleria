@@ -1,0 +1,25 @@
+[debug] [2023-08-30T00:21:52.112Z] ----------------------------------------------------------------------
+[debug] [2023-08-30T00:21:52.115Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-30T00:21:52.116Z] CLI Version:   12.5.2
+[debug] [2023-08-30T00:21:52.116Z] Platform:      win32
+[debug] [2023-08-30T00:21:52.116Z] Node Version:  v16.15.1
+[debug] [2023-08-30T00:21:52.118Z] Time:          Tue Aug 29 2023 21:21:52 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-08-30T00:21:52.119Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-30T00:21:52.251Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-30T00:21:52.252Z] > authorizing via signed-in user (fperronerey@gmail.com)
+[debug] [2023-08-30T00:21:52.252Z] [iam] checking project muebleria-gaston for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-30T00:21:52.255Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/muebleria-gaston:testIamPermissions [none]
+[debug] [2023-08-30T00:21:52.255Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/muebleria-gaston:testIamPermissions x-goog-quota-user=projects/muebleria-gaston
+[debug] [2023-08-30T00:21:52.256Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/muebleria-gaston:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-30T00:22:13.325Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/muebleria-gaston:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/muebleria-gaston:testIamPermissions failed, reason: connect ETIMEDOUT 142.250.79.138:443
+[debug] [2023-08-30T00:22:13.326Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/muebleria-gaston:testIamPermissions
+[debug] [2023-08-30T00:22:13.327Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/muebleria-gaston [none]
+[debug] [2023-08-30T00:22:13.331Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/muebleria-gaston, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/muebleria-gaston failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2023-08-30T00:22:13.331Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/muebleria-gaston (original: request to https://firebase.googleapis.com/v1beta1/projects/muebleria-gaston failed, reason: getaddrinfo ENOTFOUND firebase.googleapis.com)
+[debug] [2023-08-30T00:22:18.341Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
