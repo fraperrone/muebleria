@@ -12,6 +12,7 @@ export class FooterComponent implements OnInit {
   instagramLink: string =
     'https://instagram.com/estaciondesillones?igshid=MzRlODBiNWFlZA==';
   facebookLink: string = 'https://www.facebook.com/estaciondesillones';
+  whatsappLink: string = 'https://api.whatsapp.com/send?phone=541166943351';
 
   constructor() {}
 

@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ContactoComponent } from './contacto/contacto.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

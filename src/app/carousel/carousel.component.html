@@ -1,43 +1,20 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
-  <ol class="carousel-indicators">
+  <!-- <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
-  </ol>
+  </ol> -->
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="../../assets/20200926_175811.jpg" alt="Image"  />
+      <img src="{{ list[0].dir }}" alt="Image" />
     </div>
 
-    <div class="item">
-      <img
-        src="../../assets/20201005_153812.jpg"
-        alt="Image"
-        height="250px"
-        width="100px"
-      />
-    </div>
-
-    <div class="item">
-      <img
-        src="../../assets/20201024_205657.jpg"
-        alt="Image"
-        height="250px"
-        width="100px"
-      />
-    </div>
-
-    <div class="item">
-      <img
-        src="../../assets/IMG-20220215-WA0045.jpg"
-        alt="Image"
-        height="250px"
-        width="100px"
-      />
+    <div class="item" *ngFor="let dir of list.slice(1, list.length)">
+      <img src="{{ dir.dir }}" alt="Image" height="250px" width="100px" />
     </div>
   </div>
 
