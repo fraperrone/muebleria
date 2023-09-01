@@ -7,7 +7,11 @@ import { ContactoComponent } from './contacto/contacto.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'sobre-nosotros', component: SobreNosotrosComponent }
+  { path: 'sobre-nosotros', component: SobreNosotrosComponent },
+  {
+    path: 'contacto',
+    component: ContactoComponent,
+  },
   // { path: 'proyectos', component: ProyectosComponent },
   // { path: 'contacto', component: ContactoComponent },
 ];
