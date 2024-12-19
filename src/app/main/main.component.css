@@ -1,0 +1,19 @@
+.sofa {
+  border: 2px solid #343a40; /* Borde marcado */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+.sofa img {
+  border-radius: 5%; /* Imágenes redondeadas */
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #f8f9fa; /* Borde blanco alrededor de la imagen */
+}
+
+.sofa p {
+  font-size: 1.5em; /* Título más resaltado */
+  font-weight: bold;
+}

@@ -1,22 +1,16 @@
 <div class="container text-center">
-  <h3>Algunos de Nuestros Productos!</h3>
+  <h3 class="h1">Algunos de Nuestros Productos</h3>
   <br />
-  <div class="row" *ngFor="let sofa of lista">
-    <div class="col-md-4">
-      <img
-        src="{{ sofa.dirImg }}"
-        class="img-responsive"
-        style="width: 100%"
-        alt="{{ sofa.dirImg }}"
-      />
-      <p>{{ sofa.toString() }}</p>
-    </div>
-
-    <!-- <div class="col-sm-4">
-      <div class="well">
-       <p>Somos Fabrica de Sillones, nos especializamos en la comodidad de tu serie, partido o evento. Seguidnos en nuestras redes y conócenos mas...</p>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let sofa of lista">
+      <div class="sofa">
+        <img
+          src="{{ sofa.dirImg }}"
+          class="img-responsive"
+          alt="{{ sofa.dirImg }}"
+        />
+        <p>{{ sofa.toString() }}</p>
       </div>
-    </div> -->
+    </div>
   </div>
-  <h3>Mas info en nuestras redes.</h3>
 </div>
