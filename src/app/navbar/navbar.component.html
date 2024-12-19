@@ -11,20 +11,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Estación de Sillones</a>
+      <a class="navbar-brand" routerLink="/">Estación de Sillones</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="">Inicio</a></li>
-        <li><a href="/sobre-nosotros">Sobre Nosotros</a></li>
-        <li><a href="/contacto">Contacto</a></li>
-
-        <!-- <li><a href="/proyectos">Proyectos</a></li>
-        <li><a href="/contacto">Contacto</a></li> -->
+        <li><a routerLink="" (click)="closeMenu()">Inicio</a></li>
+        <li><a routerLink="/sobre-nosotros" (click)="closeMenu()">Sobre Nosotros</a></li>
+        <li><a routerLink="/contacto" (click)="closeMenu()">Contacto</a></li>
+        <!-- <li><a routerLink="/proyectos" (click)="closeMenu()">Proyectos</a></li> -->
+        <!-- <li><a routerLink="/contacto" (click)="closeMenu()">Contacto</a></li> -->
       </ul>
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul> -->
     </div>
   </div>
 </nav>
+
