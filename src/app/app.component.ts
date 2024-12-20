@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Sofa } from './Sofa';
-import { DataService } from './data.service';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +7,14 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'muebleria';
+  title = 'tu-aplicacion-angular';
+  showNavbar = true;
 
-  constructor() {}
-
-  ngOnInit(): void {}
+  constructor(private router: Router) {
+    router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.showNavbar = !event.url.includes('ads.txt');
+      }
+    });
+  }
 }

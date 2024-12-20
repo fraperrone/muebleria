@@ -4,6 +4,7 @@ import { MainComponent } from './main/main.component';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { AdsComponent } from './ads/ads.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
     path: 'contacto',
     component: ContactoComponent,
   },
+  { path: 'ads.txt', component: AdsComponent, data: { hideNavbar: true } },
   // { path: 'proyectos', component: ProyectosComponent },
   // { path: 'contacto', component: ContactoComponent },
 ];

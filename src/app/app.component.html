@@ -1,4 +1,10 @@
-<app-navbar></app-navbar>
-<app-carousel></app-carousel>
+<div *ngIf="showNavbar">
+  <app-navbar></app-navbar>
+  <app-carousel></app-carousel>
+</div>
+
 <router-outlet></router-outlet>
-<app-footer></app-footer>
+
+<div *ngIf="showNavbar">
+  <app-footer></app-footer>
+</div>
